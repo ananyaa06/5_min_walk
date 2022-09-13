@@ -86,12 +86,11 @@ class App extends Component {
   
 
     const getWalks = () => {
-      // var url = `https://api.geoapify.com/v1/isoline?lat=${this.state.latitude}&lon=${this.state.longitude}&type=time&mode=walk&range=300apiKey=b0acd933137644ac9718782accd6d543`;
       var requestOptions = {
         method: 'GET',
       };
 
-      var url = `https://api.geoapify.com/v1/isoline?lat=${this.state.latitude}&lon=${this.state.longitude}&type=time&mode=walk&range=300&apiKey=b0acd933137644ac9718782accd6d543`;
+      var url = `https://api.geoapify.com/v1/isoline?lat=${this.state.latitude}&lon=${this.state.longitude}&type=time&mode=walk&range=300&apiKey=[ENTER API KEY HERE]`;
 
       fetch(url, requestOptions)
         .then(response => {
